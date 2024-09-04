@@ -38,7 +38,10 @@ def get_book_text(path):
     with open(path) as f:
         return f.read()
 
-#prompt user for Y/n input, return true/false
+# prompt user for Y/n input, return true if Y
+# any input other than 'y' returns false
+# keeping it simple for now. 
+# later would like to prompt again on invalid input
 
 def query(question):
     print(f"{question} Y/n?")
